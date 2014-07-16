@@ -23,27 +23,75 @@
            <label for="new-last-name">Last Name</label>
            <input type="text" class="form-control" id="new-last-name">
           </div>
-          <div class="form-group">
-            <label for="new-address">Address</label>
-            <input type="text" class="form-control" id="new-address">
+
+          <div id="new-id-addresses">
+            <div class="new-class-address">
+              <div class="form-group">
+                <label for="new-street">Street</label>
+                <input type="text" class="form-control new-street">
+              </div>
+              <div class="form-group">
+                <label for="new-city">City</label>
+                <input type="text" class="form-control new-city">
+              </div>
+              <div class="form-group">
+                <label for="new-state">State</label>
+                <input type="text" class="form-control new-state">
+              </div>
+            </div>
           </div>
 
-          <button type="submit" class="btn">Add</button>
+          <div id="new-phones">
+            <div class="new-phone">
+              <div class="form-group">
+                <label for="new-phone-entry">Phone Number</label>
+                <input type="text" class="form-control new-phone-entry">
+              </div>
+            </div>
+          </div>
+
+          <div id="new-email-ad">
+            <div class="new-email">
+              <div class="form-group">
+                <label for="new-email-entry">E-mail</label>
+                <input type="text" class="form-control new-email-entry">
+              </div>
+            </div>
+          </div>
+
+          <span class="btn btn-primary btn-sm" id="add-address">Add Another Address</span>
+          <span class="btn btn-success btn-sm" id="add-phone">Add Another Phone Number</span>
+          <span class="btn btn-warning btn-sm" id="add-email">Add an Email Address</span>
+
+          <button type="submit" class="btn">Add This Contact</button>
          </form>
 
          <h2>Contacts:</h2>
          <ul id="contacts">
 
          </ul>
-        </div>
+       </div>
        <div class="col-md-6">
           <div id ="show-contact">
            <h2></h2>
 
            <p>First name: <span class="first-name"></span></p>
            <p>Last name: <span class="last-name"></span></p>
-           <p>Address: <span class="address"></span></p>
+           <p>Addresses:</p>
+           <ul id="addresses">
+
+
+           </ul>
+           <p>Phone Numbers:</p>
+           <ul id="phones">
+
+           </ul>
+           <p>Email address(es):</p>
+           <ul id="emails">
+
+           </ul>
           </div>
+        </div>
        </div>
       </div>
     </div>
